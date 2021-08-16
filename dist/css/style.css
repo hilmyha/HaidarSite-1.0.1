@@ -76,12 +76,17 @@ body {
   flex: 1;
 }
 .container .sidebar .tag h3 {
-  margin: 0px 15px;
+  margin: 15px 0px 15px 15px;
 }
 .container .sidebar .tag li {
-  margin: 15px;
+  margin: 0px;
+  padding: 15px;
   list-style: none;
   text-decoration: none;
+}
+.container .sidebar .tag li:hover {
+  transition: 0.5s;
+  background-color: whitesmoke;
 }
 .container .sidebar .tag a {
   color: gray;
@@ -137,6 +142,7 @@ body {
   border: none;
 }
 .footbar .cover-col .col form input[type=submit]:hover {
+  cursor: pointer;
   transition: 1s;
   background-color: gray;
 }
