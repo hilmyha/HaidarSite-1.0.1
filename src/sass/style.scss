@@ -17,35 +17,34 @@ body{
         justify-content: center;
     }
     img{
-        margin-top: 150px;
+        margin-top: 120px;
     }
-
-    // navbar
-    .navbar{
-        display: flex;
-        background-color: cadetblue;
-        margin: 6% 10% 0% 10%;
-        ul{
-            flex-grow: 1;
-            padding: 10px 0px 10px 0px;
-            a{
-                
-                padding: 10px;
-                text-decoration: none;
-                color: white;
-            }
-            a:hover{
-                transition: 0.6s;
-                background-color: rgb(226, 226, 226);
-                color: black;
-            }
+}
+// navbar
+.navbar{
+    display: flex;
+    background-color: cadetblue;
+    margin: -5% 10% 0% 10%;
+    ul{
+        flex-grow: 1;
+        padding: 10px 0px 10px 0px;
+        a{
+            
+            padding: 10px;
+            text-decoration: none;
+            color: white;
         }
-        input[type=text]{
-            height: 40px;
-            width: 300px;
-            border: none;
-            color: gray;
+        a:hover{
+            transition: 0.6s;
+            background-color: rgb(226, 226, 226);
+            color: black;
         }
+    }
+    input[type=text]{
+        height: 40px;
+        width: 300px;
+        border: none;
+        color: gray;
     }
 }
 
@@ -182,6 +181,47 @@ body{
 }
 
 // responsive
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 920px) {
+    *{
+        max-width: 100%;
+    }
+    .navbar{
+        margin: 0% 0% 5% 0%;
+        flex-direction: column;
+        ul{
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+        input[type=text]{
+            padding-left: 10px;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+    }
+    .container{
+        width: 100%;
+        margin: 10% 0% 0% 0%;
+        flex-direction: column;
+    }
+    .about{
+        margin: 0% 0% 0% 0%;
+    }
+    .footbar{
+        height: auto;
+        text-align: center;
+        .cover-col{
+            flex-direction: column;
+            form{
+                justify-content: center;
+            }
+            .col{
+                .social-media{
+                    margin: 0;
+                    justify-content: center;
+                }
+            }
+        }
+    }
     
 }
