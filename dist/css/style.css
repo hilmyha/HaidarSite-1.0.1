@@ -22,27 +22,26 @@ body {
 .spotlight img {
   margin-top: 150px;
 }
-
-.navbar {
+.spotlight .navbar {
   display: flex;
   background-color: cadetblue;
   margin: 6% 10% 0% 10%;
 }
-.navbar ul {
+.spotlight .navbar ul {
   flex-grow: 1;
-  padding: 10px;
-  padding-left: 0px;
+  padding: 10px 0px 10px 0px;
 }
-.navbar ul a {
+.spotlight .navbar ul a {
   padding: 10px;
   text-decoration: none;
   color: white;
 }
-.navbar ul a:hover {
+.spotlight .navbar ul a:hover {
+  transition: 0.6s;
   background-color: #e2e2e2;
   color: black;
 }
-.navbar input[type=text] {
+.spotlight .navbar input[type=text] {
   height: 40px;
   width: 300px;
   border: none;
@@ -55,6 +54,7 @@ body {
   margin: 10% 10% 5% 10%;
 }
 .container .article {
+  color: gray;
   flex: 2;
 }
 .container .article .content {
@@ -72,6 +72,7 @@ body {
   margin: 15px;
 }
 .container .sidebar {
+  color: gray;
   flex: 1;
 }
 .container .sidebar .tag h3 {
@@ -80,9 +81,14 @@ body {
 .container .sidebar .tag li {
   margin: 15px;
   list-style: none;
+  text-decoration: none;
+}
+.container .sidebar .tag a {
+  color: gray;
 }
 
 .about {
+  color: gray;
   margin: 0% 10% 10% 10%;
   text-align: center;
 }
@@ -115,9 +121,6 @@ body {
 .footbar .cover-col .col p {
   margin: 24px;
 }
-.footbar .cover-col .col a {
-  margin: 24px;
-}
 .footbar .cover-col .col form {
   margin: 24px;
   display: flex;
@@ -135,6 +138,14 @@ body {
 }
 .footbar .cover-col .col form input[type=submit]:hover {
   background-color: gray;
+}
+.footbar .cover-col .col .social-media {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 0px 24px;
+}
+.footbar .cover-col .col .social-media a {
+  padding: 10px;
 }
 .footbar .cover-col .col .contact-us {
   display: flex;
