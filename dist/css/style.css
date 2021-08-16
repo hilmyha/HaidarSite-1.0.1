@@ -9,12 +9,15 @@ body {
 
 .spotlight {
   height: 500px;
-  text-align: center;
   background: url("../../dist/asset/alex-gruber-r0S85Om5JeY-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
+}
+.spotlight .logo {
+  display: flex;
+  justify-content: center;
 }
 .spotlight img {
   margin-top: 150px;
@@ -23,10 +26,10 @@ body {
 .navbar {
   display: flex;
   background-color: cadetblue;
+  margin: 6% 10% 0% 10%;
 }
 .navbar ul {
   flex-grow: 1;
-  margin-left: 10%;
   padding: 10px;
   padding-left: 0px;
 }
@@ -39,8 +42,7 @@ body {
   background-color: #e2e2e2;
   color: black;
 }
-.navbar .search {
-  margin-right: 10%;
+.navbar input[type=text] {
   height: 40px;
   width: 300px;
   border: none;
@@ -152,7 +154,7 @@ body {
   padding: 10px 10px 10px 0px;
 }
 .foot-menu ul a {
-  padding-right: 10px;
+  padding: 0px 10px 0px 10px;
   text-decoration: none;
   color: black;
   border-right: 1px dotted blue;
