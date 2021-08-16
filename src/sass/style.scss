@@ -135,6 +135,7 @@ body{
                     border: none;
                 }
                 input[type=submit]:hover{
+                    transition: 1s;
                     background-color: gray;
                 }
                 
@@ -144,7 +145,7 @@ body{
                 flex-direction: row;
                 margin: 0px 0px 0px 24px;
                 a{
-                    padding: 10px;
+                    padding-right: 10px;
                 }
             }
             .contact-us{

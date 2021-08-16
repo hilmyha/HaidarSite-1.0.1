@@ -137,6 +137,7 @@ body {
   border: none;
 }
 .footbar .cover-col .col form input[type=submit]:hover {
+  transition: 1s;
   background-color: gray;
 }
 .footbar .cover-col .col .social-media {
@@ -145,7 +146,7 @@ body {
   margin: 0px 0px 0px 24px;
 }
 .footbar .cover-col .col .social-media a {
-  padding: 10px;
+  padding-right: 10px;
 }
 .footbar .cover-col .col .contact-us {
   display: flex;
