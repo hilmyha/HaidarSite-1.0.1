@@ -182,9 +182,6 @@ body{
 
 // responsive
 @media screen and (max-width: 920px) {
-    *{
-        max-width: 100%;
-    }
     .navbar{
         margin: 0% 0% 5% 0%;
         flex-direction: column;
@@ -194,7 +191,6 @@ body{
             flex-direction: column;
         }
         input[type=text]{
-            padding-left: 10px;
             width: 100%;
             background-color: whitesmoke;
         }
@@ -205,21 +201,17 @@ body{
         flex-direction: column;
     }
     .about{
+        width: 100%;
         margin: 0% 0% 0% 0%;
     }
     .footbar{
         height: auto;
-        text-align: center;
         .cover-col{
             flex-direction: column;
-            form{
-                justify-content: center;
-            }
+            width: 100%;
+            margin: 0 auto;
             .col{
-                .social-media{
-                    margin: 0;
-                    justify-content: center;
-                }
+                margin: 0;
             }
         }
     }
